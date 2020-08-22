@@ -1,0 +1,7 @@
+[common info]
+
+url = https://qaclickacademy.github.io/protocommerce/
+Name = Ketan
+Email = puranik324@gmail.com
+Password = ishaan@2012
+DOB = 21-02-1986

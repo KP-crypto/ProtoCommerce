@@ -2,14 +2,15 @@ from selenium import webdriver
 import pytest
 from selenium.webdriver.support import select
 from pages.HomePage import HomePage
+from Utilities.readrequirement import Readconfig
 
 
 class Test_001_homePage:
-    url = "https://qaclickacademy.github.io/protocommerce/"
-    Name = "Ketan"
-    Email = "puranik324@gmail.com"
-    Password = "ishaan@2012"
-    DOB = "21-02-1986"
+    url = Readconfig.getapplicationURL()
+    Name = Readconfig.getName()
+    Email = Readconfig.getEmail()
+    Password = Readconfig.getPassword()
+    DOB = Readconfig.getDOB()
 
     def test_homePage(self,setup):
         self.driver = setup
